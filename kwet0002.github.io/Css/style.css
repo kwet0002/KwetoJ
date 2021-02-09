@@ -94,7 +94,7 @@ header .logo {
 .icons {
     display: flex;
     justify-content: right;
-    align-items: right;
+   
     margin: auto;
     position: relative;
     color: black;
@@ -131,7 +131,7 @@ header .logo {
 @media (max-width: 960px){
 header .logo {
     position: relative;
-    size: 50px;
+    
  }
  .content .info h2{
     font-size: 45px;
@@ -148,7 +148,7 @@ header .logo {
 
  .form{
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: flex-end;
 }
 .section {
@@ -158,10 +158,10 @@ header .logo {
 }
 }
 /* adding media queries : mobile style */
-@media (min-width: 600px;){
+@media (min-width: 600px){
     header .logo {
         position: relative;
-        size: 20px;
+        
      }
      .content .info h2{
         font-size: 45px;
@@ -174,7 +174,5 @@ header .logo {
      }
      .content .info{
          font-size: 20px;
-     }
-    
-  
+     } 
 }
