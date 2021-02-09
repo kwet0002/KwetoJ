@@ -1,0 +1,180 @@
+/* adding template to start of style sheet and adding the needed fonts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* adding style to section/ display in flex format/ adding a background image */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   background: url("/kwet0002.github.io/Semester2/Landingpages/master-files-landing-page/images/bg-image/scooter.svg") no-repeat;
+   background-size: 850px;
+   background-position: center;
+   
+}
+/* adding style to header/ styling how i want it to look */
+header {
+    position: relative;
+    top: 0;
+    width: 50px;
+    padding:  30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* styling logo of landing page */
+header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    width: 200px;
+    height: 140px;
+}
+/* styling the conten */
+.content {
+    max-width: 650px;
+    margin: 60px 100px;
+}
+/* styling main heading of content */
+.content .info h2 {
+    color: black;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+/* styling the small paragraph in content */
+.content .info p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+/* styling the form of html */
+.form {
+    margin: auto;
+    max-width: 80%;
+    width: 650px; 
+}
+.form .form1 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.form .form1 {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0,0, 3);
+}
+/* styling the button in the form */
+.form .btn {
+    color: black;
+    background: #57eeab;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* styling icons from html */
+.icons {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: auto;
+    position: relative;
+    color: black;
+    font-size: 25px;
+}
+/* adding margin to make space between icons */
+.icons :not(:last-child){
+    margin-right: 60px;
+}
+
+    
+/* styling the bottom content of html */
+.media {
+    background: #fffd8c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+/* styling the button in last part of html */
+.media .btn1 {
+    color: white;
+    background: #ff8480;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Media queries */
+/* ----- desktop- Style------- */
+@media (max-width: 960px){
+header .logo {
+    position: relative;
+    size: 50px;
+ }
+ .content .info h2{
+    font-size: 45px;
+    line-height: 40px;
+
+ }
+ .content .info h2 span{
+     font-size: 40px;
+     font-weight: 600;
+ }
+ .content .info{
+     font-size: 20px;
+ }
+
+ .form{
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+}
+.section {
+    background: 50px;
+    background-size: 50px;
+
+}
+}
+/* adding media queries : mobile style */
+@media (min-width: 600px;){
+    header .logo {
+        position: relative;
+        size: 20px;
+     }
+     .content .info h2{
+        font-size: 45px;
+        line-height: 40px;
+    
+     }
+     .content .info h2 span{
+         font-size: 40px;
+         font-weight: 600;
+     }
+     .content .info{
+         font-size: 20px;
+     }
+    
+  
+}
